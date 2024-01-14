@@ -1,0 +1,435 @@
+/*sección del toggle menu*/
+
+.navbar i{
+    display: none /* Esconde las 3 barras del nav*/;
+  }
+
+#toggle-menu{
+    display: none; /* esconde la casilla */
+  }
+
+.toggle-menu{
+    
+    position: absolute;
+    right: 60px;
+  }
+  
+@media (max-width: 992px)
+{
+  .navbar ul{
+
+        margin-top: 21px; /*separación del menu desplegable y el navbar*/
+        background-color: rgb(47, 20, 97);
+        width: 100%;
+        position: absolute;
+        top: 78px;
+        left: 0;
+        gap: 145px; /*separa los elementos del menu desplegable, y este se amplía solo*/
+        padding: 70px;/*separa los elementos a la misma distancia respecto al navbar y el fondo de la página */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: none;
+       
+    }
+
+    .navbar-link{
+      
+      box-shadow: 2px 2px 5px black;
+      padding: 50px 470px 50px 470px;
+  
+    }
+
+    .navbar i{ /*sirve para mostrar las 3 barras*/
+      display: block;
+      color: black;
+    }
+
+    #toggle-menu:checked + .navbar-list{ /*permite abrir menu desplegable*/
+      display: flex;
+    }
+
+    .hero-img{
+      display: none;
+    }
+
+    #hero{
+
+      padding-bottom: 100px;
+      padding-top: 100px;
+    }
+
+    .hero-presentation{
+      
+      margin-top: 30px;
+      padding: 70px 100px 70px 0px;
+      gap: 50px;
+      align-items: center;
+    }
+    
+    .hero-presentation h1{
+      font-size: 30px;
+      width: 100%
+    }
+    
+    .button-container {
+      display: flex;
+      align-items: center;
+      padding-right: 80px;
+      gap: 50px;
+    }
+
+    #about{
+      display: flex;
+      align-items: center;
+      padding: 20px 50px 20px 50px;
+      gap: 110px;
+    }
+
+    .about{
+
+      font-size: 15px ;
+
+    }
+
+    .about-info img{
+    
+      display: none;
+      
+    }
+
+    #cards{
+
+      padding: 90px;
+      display: flex;
+      justify-content: space-between; 
+      gap: 50px;
+    }
+    
+    .info-cards-container a img{
+    
+      display: none;
+      
+    }
+
+    .info-cards-container{
+
+
+      flex-direction: column;
+      border-color: black;
+      padding: 50px 200px 50px 200px;
+      background-color: white;
+      border-radius: 30px 30px 30px 30px;
+      margin-bottom: 100px;
+      width: 170px;
+      
+    }
+
+    .info-card{
+
+      font-size: 20px;
+      gap:50px
+     
+    }
+
+    .info-card h3{
+
+      padding-bottom: 15px;
+
+    }
+
+    .info-cards{
+      
+      float: left;
+      gap: 50px;
+    }
+  
+
+    .info-card img{
+      height: 100px;
+    }
+
+    .form-group textarea{
+      
+      color: black;
+      width: 220px;
+      height: 370px;
+    
+    }   
+
+
+    #contact h2{
+
+     font-size: 20px;
+
+    }
+
+    #contact label{
+
+      font-size: 15px;
+    }
+
+    .col-md-1{
+      display: none;
+    }
+
+    .container{
+
+      padding-right: 50px;
+   
+    }
+
+    .col-md-3 h4{
+
+      font-size: 25px;
+      padding-bottom: 55px;
+    }
+
+    .col-md-3 ul{
+
+      font-size:25px;
+      gap:10px;
+    }
+
+    .links{
+
+      padding: 50px;
+
+  
+    }
+
+
+
+
+
+}  
+
+
+/*---------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 576px){
+
+    .navbar ul{
+
+        margin-top: 21px; /*separación del menu desplegable y el navbar*/
+        background-color: rgb(47, 20, 97);
+        border-color: black;
+        width: 100%;
+        position: absolute;
+        top: 78px;
+        left: 0;
+        gap: 140px; /*separa los elementos del menu desplegable, y este se amplía solo*/
+        padding: 70px;/*separa los elementos a la misma distancia respecto al navbar y el fondo de la página */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        
+        
+       
+    }
+
+    .navbar-link{
+      
+      box-shadow: 2px 2px 5px black;
+      padding: 50px 260px 50px 260px;
+  
+    }
+
+    .navbar i{ /*sirve para mostrar las 3 barras*/
+        display: block;
+        color: black;
+       
+      }
+
+    #toggle-menu:checked + .navbar-list{ /*permite abrir menu desplegable*/
+        display: flex;
+      }
+
+      .hero-img{
+        display: none;
+      }
+
+      #hero{
+
+        padding-bottom: 100px;
+        padding-top: 100px;
+      }
+      
+      .hero-presentation{
+      
+        margin-top: 30px;
+        padding: 70px 100px 70px 0px;
+        gap: 50px;
+        align-items: center;
+      }
+      
+      .hero-presentation h1{
+        font-size: 30px;
+        width: 100%
+      }
+      
+      .button-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-right: 80px;
+        gap: 50px;
+      }
+
+      #about{
+        display: flex;
+        align-items: center;
+        padding: 20px 50px 20px 50px;
+        gap: 110px;
+      }
+  
+      .about{
+
+        font-size: 10px ;
+
+      }
+
+      .about-info img{
+      
+        display: none;
+        
+      }
+
+      #cards{
+
+        padding: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+      }
+      
+      .info-cards-container a img{
+      
+        display: none;
+        
+      }
+      
+      .info-cards-container{
+      
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-color: black;
+        padding: 50px 200px 50px 200px;
+        background-color: white;
+        border-radius: 30px 30px 30px 30px;
+        margin-bottom: 100px;
+        width: 17px;
+        
+      }
+
+      .info-card{
+
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        gap:50px
+       
+      }
+
+      .info-card h3{
+
+        padding-bottom: 15px;
+
+      }
+
+      .info-cards{
+        
+        float: left;
+        gap: 50px;
+      }
+    
+
+      .info-card img{
+        height: 100px;
+      }
+
+      
+      .form-group textarea{
+      
+        color: black;
+        width: 220px;
+        height: 150px;
+      
+      }   
+      
+
+      #contact h2{
+
+       font-size: 20px;
+
+      }
+
+      #contact label{
+
+        font-size: 15px;
+      }
+
+      .contact-form form{
+
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+      }
+
+      .contact-form button{
+
+        float: left;
+      }
+
+      .form-info{
+
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+      }
+
+      
+      .col-md-1{
+        display: none;
+      }
+
+      .container{
+
+        margin-left: 150px ;
+        padding-left: 130px;
+        width: 50px;
+      }
+
+      .col-md-3 h4{
+
+        font-size: 10px;
+        padding-bottom: 5px;
+      }
+
+      .col-md-3 ul{
+
+        font-size:15px;
+        padding: 20px;
+  
+      }
+
+      .col-md-3 a{
+
+        font-size: 10px;
+      }
+
+      .col-md-3 a img{
+
+        height: 40px;
+      }
+
+      .links{
+
+        padding: 5px;
+      }
+}
+
+
+

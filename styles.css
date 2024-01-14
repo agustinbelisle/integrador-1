@@ -1,0 +1,410 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header{
+
+    display: flex; /*items uno al lado de otro*/
+    align-items: center; /*elementos centrados a media altura del nav*/
+    justify-content: space-between; /* espacio entre imagen y lista*/
+    padding: 0px 50px; /*separacion del entorno, espacio arriba y abajo, espacio izquierda o derecha*/
+    background-image: linear-gradient(to right, rgb(140, 32, 190),rgb(140, 32, 190),rgb(64, 8, 116));
+    box-shadow: 2px 2px 5px black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1; /*muestra el navbar aunque desplacemos la página hacia abajo*/
+    width: 100%;
+    
+}
+
+.header img{
+    height: 100px; /*tamaño de la imagen cambia el tamaño del navbar*/
+}
+
+.navbar {
+
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;  
+    
+  }
+
+.navbar ul{
+
+    display: flex;
+    gap: 100px;
+    
+}
+
+.navbar-link{
+
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(231, 231, 231);
+}
+
+
+.navbar a{
+    text-decoration: none; /*quitar subrayado por defecto de la lista */
+}
+
+.navbar li{
+    list-style-type: none; /*quitar puntos de elementos en la lista */
+}
+
+body{
+
+    background-color: black;
+}
+
+/*-----------------------------------------------------------SECCIÓN HERO------------------------------------------------*/
+
+#hero{
+
+    background-color: white;
+    display: flex; 
+    gap: 10px; 
+    align-items: center;
+    padding: 80px 0px 0px 200px; 
+}
+
+#hero img{
+    height: 500px;
+}
+
+
+.hero-title {
+    color: rgb(0, 0, 0);
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 30px;
+  }
+
+.hero-paragraph {
+
+  color: rgb(140, 32, 190);
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+.hero-img {
+
+    width: 700px; 
+    flex-shrink: 0;
+    border-radius: 20px; 
+    padding: 20px; 
+    
+  }
+
+/* sección de botones en el hero */
+  
+.button-container{
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+
+.hero-link1{
+
+    border-radius: 30px 30px 30px 30px;
+    padding: 20px;
+    border: 1px solid rgb(140, 32, 190);
+    text-decoration: none;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    background-color: rgb(140, 32, 190);
+    
+}
+
+.hero-link2{
+
+    border-radius: 30px 30px 30px 30px;
+    padding: 20px;
+    border: 1px solid rgb(140, 32, 190);
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+/*------------------------sección about------------------*/
+
+#about{
+
+    color: black;
+    background-image: linear-gradient(to right, rgb(52, 208, 219),rgb(23, 82, 209));
+    padding: 50px 150px 50px 150px;
+}
+
+#about h2{
+
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about{
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.about-info{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 10px;
+}
+
+.about-info img{
+
+    height: 500px;
+    
+}
+
+/*------------------------------CARDS-----------------------------------*/
+
+#cards{
+
+    background-image: linear-gradient(to right,rgb(255, 253, 253),rgba(255, 255, 255, 0.397),rgba(128, 128, 128, 0.884));
+    padding: 80px;
+
+    
+}
+
+.info-cards-container{
+
+    display: flex;
+    align-items: center;
+    border-color: black;
+    padding: 50px 200px 50px 200px;
+    background-color: white;
+    border-radius: 30px 30px 30px 30px;
+    margin-bottom: 100px;
+    width: 1750px;
+
+    
+}
+
+.info-cards-container img{
+
+    height: 400px;
+    padding: 10px;
+    
+}
+
+
+.info-card{
+     
+    display: flex;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 30px 30px 30px 30px;
+    background-image: linear-gradient(to right,rgb(41, 7, 54),rgb(163, 37, 201));
+    padding: 20px;
+    color: white;
+  
+}
+
+.info-card img{
+    height: 90px;
+}
+
+/*--------------------CONTACT----------------------------*/
+
+#contact{
+
+    background-image: linear-gradient(to right, rgb(18, 216, 206),rgb(23, 82, 209));;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  }
+
+  .form-group{
+
+   background-color: white;
+   border-radius: 20px;
+   gap: 50px;
+   padding: 10px;
+
+  }
+
+  #contact h2{
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    padding-bottom: 50px;
+  }
+    
+
+  .contact p{
+    color: white;
+    padding: 10px;
+  }
+
+  .contact form label{
+
+    color: white;
+  }
+
+  .form-group select{
+    color: rgb(7, 7, 7);
+    width: 175px;
+  }
+
+  .form-group option{
+    color: black;
+  }
+
+  .form-group button{
+    color: black;
+    width: 100px;
+    height: 50px;
+    float: right;
+  }
+
+  .form-group textarea{
+
+    color: rgb(12, 12, 12);
+    width: 500px;
+    height: 350px;
+    border-radius: 10px 10px 10px 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-top: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+  
+  }
+
+  .contact-form{
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 52.5%;
+    
+  }
+
+ /*----------NUEVOS--------*/
+
+  .contact-form form{
+
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+  }
+
+  .form-info{
+
+    display: flex;
+    gap: 50px;
+  }
+
+
+
+  /*-----------------------------------SECCIÓN FOOTER----------------------------------------*/
+
+  footer {
+    
+    gap: 50px;
+    
+    background-image: linear-gradient(to right, rgb(140, 32, 190),rgb(140, 32, 190),rgb(64, 8, 116) );
+
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    
+  }
+
+  .col-md-1{
+    padding: 30px;
+    color: rgb(248, 244, 244);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .col-md-3 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+
+  }
+
+  .col-md-3 h4{
+    font-size: 2rem;
+    padding: 10px;
+    color: rgb(247, 246, 246);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .col-md-3 p{
+    padding: 30px;
+    color: rgb(248, 244, 244);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .col-md-3 a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: rgb(243, 236, 236);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .col-md-3 ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+    list-style-type: none;
+
+  }
+  
+  .col-md-3 button{
+    color: black;
+  }
+
+  .col-md-3 a img{
+
+    height: 50px;
+  }
+  
+  .links{
+
+    display: flex;
+    flex-direction: row;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+

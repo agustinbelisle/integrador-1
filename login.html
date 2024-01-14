@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="styleslogreg.css">
+    <link rel="stylesheet" href="logregmq.css">
+
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <a href="index.html"><img src="logoaeb2.png" alt="logo"></a>
+
+        <nav class="navbar">
+
+            <label for="toggle-menu"><i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" id="toggle-menu">
+
+            <ul class="navbar-list">
+              <li><a href="#" class="navbar-link">Personas</a></li>
+              <li><a href="#" class="navbar-link">Empresas</a></li>
+              <li><a href="login.html" class="navbar-link">Ingresar</a></li>
+              <li><a href="registry.html" class="navbar-link">Registro</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    
+     <section id="login">
+
+
+      <form action="login.php" method="post">
+        <div class="login">
+
+          <h1>Te damos la bienvenida a la Banca Online</h1>
+
+           <div class="form-group">
+   
+           <label for="tipodoc">Tipo de documento</label>
+           </br>
+
+           <select id="tipodoc" name="tipodoc" required>
+             <option value="">...</option>
+             <option value="DNI">DNI</option>
+             <option value="LE">LE</option>
+             <option value="CI">CI</option>
+             <option value="DNI">DNI</option>
+             <option value="LC">LC</option>
+             <option value="PASSPORT">PASAPORTE</option>
+             <option value="RENAPER">RENAPER</option>
+           </select>
+
+             </div>
+
+           <div class="form-group">
+   
+               <label for="num-doc">Numero de documento</label>
+             </br>
+               <input type="number" id="num-doc" placeholder="" required>
+
+             </div>
+
+           <div class="form-group">
+
+               <label for="user">Usuario</label>
+           </br>
+             <input type="text" id="user" placeholder="" required>
+
+           </div>
+
+           <div class="form-group">
+
+               <label for="password">Clave Digital</label>
+           </br>
+             <input type="number" id="password" placeholder="" required>
+
+           </div>
+
+           <div class="check">
+ 
+               <input type="checkbox" id="privacy" name="privacy">
+               <label for="privacy">Guardar tipo y número de documento</label>
+
+           </div>
+
+
+           <div class="submit">
+ 
+               <button type="submit"><strong>Ingresar</strong></button>
+               
+           </div>
+
+           <div class="form-group">
+
+               <a href="#" class="log-link"><strong>¿Olvidaste o bloqueaste tu Usuario y/o Clave Digital?</strong></a>
+
+           </div>
+
+
+           <div class="form-group">
+
+               <p>Si es la primera vez que ingresás a Banca Online, <a href="registry.html" class="log-link"><strong>registrate</strong>.</a></p>
+
+           </div>
+           
+
+       </div>
+
+      </form>
+
+      <footer>
+
+        
+
+        <div class="container-0">
+
+          <img src="./icons/padlock.png" alt="padlock">
+
+          
+
+          <h2>No compartas tus datos personales o claves de acceso por email, teléfono, mensajes o redes sociales.</br> Conocé nuestras recomendaciones de <a href="#" class="secu-link">seguridad</a>.</h2>
+
+
+        </div>
+
+
+      </footer>
+
+        
+
+
+
+
+        
+     </section>
+
+
+        
+
+        
+
+
+   
+
+    
+</body>
+</html>
