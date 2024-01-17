@@ -1,11 +1,11 @@
-/*sección del toggle menu*/
+
 
 .navbar i{
-    display: none /* Esconde las 3 barras del nav*/;
+    display: none ;
   }
 
 #toggle-menu{
-    display: none; /* esconde la casilla */
+    display: none; 
   }
 
 .toggle-menu{
@@ -18,34 +18,36 @@
 {
   .navbar ul{
 
-        margin-top: 21px; /*separación del menu desplegable y el navbar*/
+        margin-top: 21px; 
         background-color: rgb(47, 20, 97);
         width: 100%;
         position: absolute;
-        top: 78px;
+        top: 79px;
         left: 0;
-        gap: 145px; /*separa los elementos del menu desplegable, y este se amplía solo*/
-        padding: 70px;/*separa los elementos a la misma distancia respecto al navbar y el fondo de la página */
+        gap: 45px; 
+        padding: 20px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         display: none;
+        white-space: nowrap; 
        
     }
 
     .navbar-link{
       
       box-shadow: 2px 2px 5px black;
-      padding: 50px 470px 50px 470px;
+      padding: 10px 470px 10px 470px;
+      display: flex;
   
     }
 
-    .navbar i{ /*sirve para mostrar las 3 barras*/
+    .navbar i{
       display: block;
       color: black;
     }
 
-    #toggle-menu:checked + .navbar-list{ /*permite abrir menu desplegable*/
+    #toggle-menu:checked + .navbar-list{ 
       display: flex;
     }
 
@@ -205,21 +207,21 @@
 }  
 
 
-/*---------------------------------------------------------------------------------------------------------*/
+
 
 @media (max-width: 576px){
 
     .navbar ul{
 
-        margin-top: 21px; /*separación del menu desplegable y el navbar*/
+        margin-top: 21px; 
         background-color: rgb(47, 20, 97);
         border-color: black;
         width: 100%;
         position: absolute;
         top: 78px;
         left: 0;
-        gap: 140px; /*separa los elementos del menu desplegable, y este se amplía solo*/
-        padding: 70px;/*separa los elementos a la misma distancia respecto al navbar y el fondo de la página */
+        gap: 10px; 
+        padding: 10px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -232,17 +234,17 @@
     .navbar-link{
       
       box-shadow: 2px 2px 5px black;
-      padding: 50px 260px 50px 260px;
+      padding: 10px 260px 10px 260px;
   
     }
 
-    .navbar i{ /*sirve para mostrar las 3 barras*/
+    .navbar i{
         display: block;
         color: black;
        
       }
 
-    #toggle-menu:checked + .navbar-list{ /*permite abrir menu desplegable*/
+    #toggle-menu:checked + .navbar-list{
         display: flex;
       }
 

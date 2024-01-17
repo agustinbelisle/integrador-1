@@ -6,22 +6,22 @@
 
 .header{
 
-    display: flex; /*items uno al lado de otro*/
-    align-items: center; /*elementos centrados a media altura del nav*/
-    justify-content: space-between; /* espacio entre imagen y lista*/
-    padding: 0px 50px; /*separacion del entorno, espacio arriba y abajo, espacio izquierda o derecha*/
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 0px 50px; 
     background-image: linear-gradient(to right, rgb(140, 32, 190),rgb(140, 32, 190),rgb(64, 8, 116));
     box-shadow: 2px 2px 5px black;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1; /*muestra el navbar aunque desplacemos la página hacia abajo*/
+    z-index: 1; 
     width: 100%;
     
 }
 
 .header img{
-    height: 100px; /*tamaño de la imagen cambia el tamaño del navbar*/
+    height: 100px; 
 }
 
 .navbar {
@@ -46,13 +46,21 @@
     color: rgb(231, 231, 231);
 }
 
+.navbar-link:hover{
+
+  background-image: linear-gradient(to right, rgb(192, 89, 218), blueviolet);
+  padding: 10px;
+  border-radius: 5px 5px 5px 5px;
+  
+}
+
 
 .navbar a{
-    text-decoration: none; /*quitar subrayado por defecto de la lista */
+    text-decoration: none; 
 }
 
 .navbar li{
-    list-style-type: none; /*quitar puntos de elementos en la lista */
+    list-style-type: none;
 }
 
 body{
@@ -60,7 +68,6 @@ body{
     background-color: black;
 }
 
-/*-----------------------------------------------------------SECCIÓN HERO------------------------------------------------*/
 
 #hero{
 
@@ -99,7 +106,7 @@ body{
     
   }
 
-/* sección de botones en el hero */
+
   
 .button-container{
 
@@ -123,6 +130,13 @@ body{
     
 }
 
+.hero-link1:hover{
+
+  background-color: blueviolet;
+  border-color: blueviolet;
+  
+}
+
 .hero-link2{
 
     border-radius: 30px 30px 30px 30px;
@@ -135,7 +149,12 @@ body{
     
 }
 
-/*------------------------sección about------------------*/
+.hero-link2:hover{
+  background-color: blueviolet;
+  text-decoration: underline;
+  color: white;
+}
+
 
 #about{
 
@@ -172,7 +191,7 @@ body{
     
 }
 
-/*------------------------------CARDS-----------------------------------*/
+
 
 #cards{
 
@@ -220,7 +239,7 @@ body{
     height: 90px;
 }
 
-/*--------------------CONTACT----------------------------*/
+
 
 #contact{
 
@@ -303,7 +322,7 @@ body{
     
   }
 
- /*----------NUEVOS--------*/
+ 
 
   .contact-form form{
 
@@ -320,7 +339,7 @@ body{
 
 
 
-  /*-----------------------------------SECCIÓN FOOTER----------------------------------------*/
+  
 
   footer {
     
