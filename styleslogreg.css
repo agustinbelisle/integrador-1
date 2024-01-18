@@ -80,6 +80,7 @@
   flex-direction: column;
   font-weight: 300;
   gap: 5px;
+  position: relative;
 
 }
 
@@ -108,14 +109,12 @@
  transform: rotate(135deg);
 }
 #toggle-menu:checked ~ .bars-menu span:nth-child(2){
-  position: absolute;
-  top: 0;
-  transform: rotate(135deg);
+  opacity: 0;
  }
  #toggle-menu:checked ~ .bars-menu span:nth-child(3){
   position: absolute;
   top: 0;
-  transform: rotate(45deg);
+  transform: rotate(225deg);
  }
 
 
