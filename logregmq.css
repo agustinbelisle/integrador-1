@@ -39,7 +39,7 @@
     }
 
 
-    #toggle-menu:checked + .navbar-list{
+    #toggle-menu:checked ~ .navbar-list{
         
       transform: translateX(0);
 
@@ -129,7 +129,7 @@
     }
 
 
-      #toggle-menu:checked + .navbar-list{
+      #toggle-menu:checked ~ .navbar-list{
         
         transform: translateX(0);
 

@@ -73,7 +73,7 @@
       list-style-type: none;
   }
 
-  /*----------------*/
+
 
 .bars-menu{
   display: none;
@@ -87,7 +87,7 @@
 .bars-menu span{
   height: 3px;
   width: 30px;
-  background-image: linear-gradient(to right,black,grey);
+  background-image: linear-gradient(to right,grey,white,white,grey);
   transition: transform 0.3s;
 }
 
@@ -106,7 +106,7 @@
 #toggle-menu:checked ~ .bars-menu span:nth-child(1){
  position: absolute;
  top: 0;
- transform: rotate(135deg);
+ transform: rotate(-45deg);
 }
 #toggle-menu:checked ~ .bars-menu span:nth-child(2){
   opacity: 0;
@@ -114,15 +114,10 @@
  #toggle-menu:checked ~ .bars-menu span:nth-child(3){
   position: absolute;
   top: 0;
-  transform: rotate(225deg);
+  transform: rotate(45deg);
  }
 
 
-
-
- 
-
-/*---------------*/
 
   .login{
     display: flex;
